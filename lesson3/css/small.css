@@ -1,121 +1,163 @@
 body {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header,
-nav,
-main,
-footer {
-    margin: 1.25em auto;
-    max-width: 1060px;
+.footermenu,
+.copyrightdetails,
+.mainarticle,
+.topsection,
+.bottomsection {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1em;
+}
+
+header img {
+    float: left;
+    max-width: 90px;
+}
+
+#siteheader {
+    color: #BA4A00;
+}
+
+.subheading1 {
+    font-size: 1em;
+    color: #BA4A00;
+    margin-top: -1em;
+    font-style: italic;
 }
 
 nav {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #1f74d1;
     text-align: center;
+    z-index: 999;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
 }
 
 nav ul {
-    list-style: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
-nav ul a {
-    text-decoration: none;
+.navigation a {
     display: block;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
     padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #839192;
     font-size: 0.95rem;
 }
 
-nav a:hover {
-    background-color: teal;
-    color: #fff;
+.navigation a:hover {
+    color: #839192;
+    background-color: #1f74d1;
+}
+
+.responsive li {
+    display: block;
 }
 
 .active {
-    color: blue;
+    color: #839192;
+    background-color: #1f74d1;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
+main img {
+    max-width: 100%;
+    height: auto;
 }
 
 main section {
-    margin: 0.5rem;
-    padding: 0 2rem;
-    background-color: #f8f8f8;
+    background-color: #283747;
     font-size: 0.95em;
-    border: 1px dotted #999;
+    margin: 0;
+    padding: 0;
 }
 
-main section:nth-child(2) {
-    display: block;
-    margin: 0.5rem;
-}
-
-main section:nth-child(2),
-main section:nth-child(4),
-main section:nth-child(6),
-main section:nth-child(8),
-main section:nth-child(10),
-main section:nth-child(12) {
-    grid-column: span 2;
-}
-
-main section:nth-child(1),
-main section:nth-child(3),
-main section:nth-child(5),
-main section:nth-child(7),
-main section:nth-child(9),
-main section:nth-child(11) {
-    border: solid 1px #999;
-}
-
-main section img {
-    box-shadow: 5px 10px #888;
+main article img {
+    box-shadow: none;
     max-width: 100%;
     height: auto;
     margin: 0.5rem;
 }
 
-header,
-footer {
+.weathersummary {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
     padding: 1em;
-    text-align: center;
-    background: royalblue;
+}
+
+.heroimage {
+    position: relative;
+}
+
+header {
+    text-align: left;
+    background-color: #283747;
     color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footermenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.copyrightdetails {
+    text-align: center;
 }
 
 h1,
 h2 {
-    font-family: 'Fredericka the Great', cursive;
-    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #315c2b;
 }
 
 h2 {
     font-size: 1.7em;
-    color: grey;
+    color: #000;
     text-align: left;
 }
 
 h3 {
     font-size: 1.5em;
-    color: orangered;
+    color: grey;
 }
 
 h3 a {
-    color: orangered;
+    color: grey;
 }
 
 h4 {
@@ -124,19 +166,29 @@ h4 {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer p {
     line-height: 1;
 }
 
-footer a {
+footer a,
+footer h3 {
     color: #fff
 }
 
+.footermenu {
+    background-color: #315c2b;
+}
+
+.footer iframe {
+    width: 100%;
+    height: auto;
+}
+
 .highlighted {
-    color: yellow;
+    color: orangered;
 }
 
 .returnlink {
@@ -145,7 +197,7 @@ footer a {
 
 h2.menuarea {
     text-align: center;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid greenyellow;
 }
 
 .boldname {
@@ -153,60 +205,4 @@ h2.menuarea {
     font-size: 1em;
 }
 
-.subheading1 {
-    font-size: 0.7em;
-    margin-top: -2.2em;
-    color: #fff;
-}
-
-.fontstyling1 {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.fontstyling2 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.greenstyling {
-    color: #fff;
-    background-color: #315c2b;
-    padding: 0.6em;
-}
-
-.yellowstyling {
-    color: #fff;
-    background-color: #ff4500;
-    padding: 1.2em;
-}
-
-.greenstyling2 {
-    color: #315c2b;
-}
-
-.bluestyling2 {
-    color: #7189FF;
-}
-
-.blackstyling {
-    color: #000;
-}
-
-.bluestyling {
-    color: #fff;
-    background-color: #7189FF;
-    padding: 1em;
-}
-
-.one {
-    font-size: 2.2em;
-}
-
-.two {
-    font-size: 1.7em;
-    color: grey;
-    text-align: left;
-}
-
-.three {
-    font-size: 1.5em;
-}
+/* Sections */

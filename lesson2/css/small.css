@@ -1,91 +1,194 @@
 body {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header,
-main,
-footer {
-    margin: 1.25em auto;
-    max-width: 1060px;
+.footermenu,
+.copyrightdetails,
+.mainarticle,
+.topsection,
+.bottomsection {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1em;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
+header img {
+    float: left;
+    max-width: 90px;
+}
+
+#siteheader {
+    color: #BA4A00;
+}
+
+.subheading1 {
+    font-size: 1em;
+    color: #BA4A00;
+    margin-top: -1em;
+    font-style: italic;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #1f74d1;
+    text-align: center;
+    z-index: 999;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    overflow: hidden;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #839192;
+    font-size: 0.95rem;
+}
+
+.navigation a:hover {
+    color: #839192;
+    background-color: #1f74d1;
+}
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    color: #839192;
+    background-color: #1f74d1;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
 }
 
 main section {
-    margin: 0.5rem;
-    padding: 0 2rem;
-    background-color: #f8f8f8;
+    background-color: #283747;
     font-size: 0.95em;
-    border: 1px dashed #999;
+    margin: 0;
+    padding: 0;
 }
 
-main section:nth-child(2) {
-    display: block;
-    margin: 0.5rem;
-}
-
-main section:nth-child(4) {
-    display: block;
-    margin: 0.5rem;
-    background-color: #fff;
-    border: none;
-}
-
-main section img {
-    box-shadow: 5px 10px #888;
-    width: 100%;
+main article img {
+    box-shadow: none;
+    max-width: 100%;
     height: auto;
-    margin: 0.5rem 0;
+    margin: 0.5rem;
 }
 
-header,
-footer {
+.weathersummary {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
     padding: 1em;
-    text-align: center;
-    background: royalblue;
+}
+
+.heroimage {
+    position: relative;
+}
+
+header {
+    text-align: left;
+    background-color: #283747;
     color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footermenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.copyrightdetails {
+    text-align: center;
 }
 
 h1,
 h2 {
-    font-family: 'Fredericka the Great', cursive;
-    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #315c2b;
 }
 
 h2 {
     font-size: 1.7em;
-    color: grey;
+    color: #000;
     text-align: left;
 }
 
+h3 {
+    font-size: 1.5em;
+    color: grey;
+}
+
+h3 a {
+    color: grey;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: teal;
+}
+
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer p {
     line-height: 1;
 }
 
-footer a {
+footer a,
+footer h3 {
     color: #fff
 }
 
-.highlighted {
-    color: yellow;
+.footermenu {
+    background-color: #315c2b;
 }
 
-a,
-a:visited {
-    color: blue;
+.footer iframe {
+    width: 100%;
+    height: auto;
+}
+
+.highlighted {
+    color: orangered;
 }
 
 .returnlink {
@@ -94,7 +197,7 @@ a:visited {
 
 h2.menuarea {
     text-align: center;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid greenyellow;
 }
 
 .boldname {
@@ -102,8 +205,4 @@ h2.menuarea {
     font-size: 1em;
 }
 
-.subheading1 {
-    font-size: 0.7em;
-    margin-top: -2.2em;
-    color: #333;
-}
+/* Sections */

@@ -12,7 +12,7 @@ footer {
 }
 
 header img {
-    box-shadow: 5px 10px #fff;
+    box-shadow: 5px 10px #2E4053;
 }
 
 header,
@@ -20,7 +20,7 @@ footer {
     padding: 1em;
     text-align: center;
     background: royalblue;
-    color: #fff;
+    color: #d4ac0d;
 }
 
 h1,
@@ -36,7 +36,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     color: grey;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #117864;
     text-align: center;
 }
 
