@@ -1,0 +1,212 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 1.25em auto;
+    max-width: 1060px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    background-color: teal;
+    color: #fff;
+}
+
+.active {
+    color: blue;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section {
+    margin: 0.5rem;
+    padding: 0 2rem;
+    background-color: #f8f8f8;
+    font-size: 0.95em;
+    border: 1px dotted #999;
+}
+
+main section:nth-child(2) {
+    display: block;
+    margin: 0.5rem;
+}
+
+main section:nth-child(2),
+main section:nth-child(4),
+main section:nth-child(6),
+main section:nth-child(8),
+main section:nth-child(10),
+main section:nth-child(12) {
+    grid-column: span 2;
+}
+
+main section:nth-child(1),
+main section:nth-child(3),
+main section:nth-child(5),
+main section:nth-child(7),
+main section:nth-child(9),
+main section:nth-child(11) {
+    border: solid 1px #999;
+}
+
+main section img {
+    box-shadow: 5px 10px #888;
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+header,
+footer {
+    padding: 1em;
+    text-align: center;
+    background: royalblue;
+    color: #fff;
+}
+
+h1,
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.7em;
+    color: grey;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: orangered;
+}
+
+h3 a {
+    color: orangered;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: teal;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    line-height: 1;
+}
+
+footer a {
+    color: #fff
+}
+
+.highlighted {
+    color: yellow;
+}
+
+.returnlink {
+    text-align: center;
+}
+
+h2.menuarea {
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+}
+
+.boldname {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.subheading1 {
+    font-size: 0.7em;
+    margin-top: -2.2em;
+    color: #fff;
+}
+
+.fontstyling1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fontstyling2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.greenstyling {
+    color: #fff;
+    background-color: #315c2b;
+    padding: 0.6em;
+}
+
+.yellowstyling {
+    color: #fff;
+    background-color: #ff4500;
+    padding: 1.2em;
+}
+
+.greenstyling2 {
+    color: #315c2b;
+}
+
+.bluestyling2 {
+    color: #7189FF;
+}
+
+.blackstyling {
+    color: #000;
+}
+
+.bluestyling {
+    color: #fff;
+    background-color: #7189FF;
+    padding: 1em;
+}
+
+.one {
+    font-size: 2.2em;
+}
+
+.two {
+    font-size: 1.7em;
+    color: grey;
+    text-align: left;
+}
+
+.three {
+    font-size: 1.5em;
+}
