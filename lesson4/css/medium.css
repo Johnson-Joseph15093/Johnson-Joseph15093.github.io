@@ -1,0 +1,18 @@
+@media only screen and (min-width: 37.5em) {
+
+    .footermenu {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+    }
+
+    .active {
+        color: darkgreen;
+        background-color: #1f74d1;
+    }
+
+    .navigation a:hover {
+        color: darkgreen;
+        background-color: #1f74d1;
+    }
+
+}
