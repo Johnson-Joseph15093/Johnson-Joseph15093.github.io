@@ -1,0 +1,57 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,
+main,
+footer {
+    margin: 1.25em auto;
+    max-width: 760px;
+}
+
+header img {
+    box-shadow: 5px 10px #fff;
+}
+
+header,
+footer {
+    padding: 1em;
+    text-align: center;
+    background: royalblue;
+    color: #fff;
+}
+
+h1,
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: grey;
+    border-bottom: 1px solid #efefef;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    line-height: 1;
+}
+
+footer a {
+    color: #fff
+}
+
+.highlighted {
+    color: yellow;
+}
