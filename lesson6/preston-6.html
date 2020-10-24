@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="Preston Local Weather">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Preston Local Weather | Joseph Johnson</title>
+</head>
+
+<body>
+    <aside>
+        <div class="fridayalert">
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </div>
+    </aside>
+
+    <header>
+        <img src="https://www.noaa.gov/sites/default/files/styles/crop_394x394/public/thumbnails/image/FocusArea__Weather-02.jpg?itok=fO6wu2A8" alt="Preston Local Weather Logo">
+        <h1 id="siteheader">Preston Local Weather</h1>
+        <p class="subheading1">We find imformation on weather and events in your area</p>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-5.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="herosection">
+            <picture class="heroimage"><img src="https://freerangestock.com/sample/136459/road-through-farmland.jpg" alt="Idaho Farmland"></picture>
+            <div class="weathersummary">
+                <h2>Weather Summary</h2>
+                <p>Currently: Sunny</p>
+                <p>Current Temperature: <span id="temperatureinput">50</span> &#176;F</p>
+                <p>Wind Chill: <span id="windchilloutput"></span></p>
+                <p>Humidity: 69%</p>
+                <p>Wind Speed: <span id="windspeedinput">12</span> mph</p>
+            </div>
+        </div>
+
+        <section class="topsection">
+            <h2>Five Day Forecast</h2>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/42d10n111d88/preston/?unit=us"
+                data-label_1="PRESTON" data-label_2="WEATHER" data-days="5" data-theme="pure">PRESTON WEATHER</a>
+        </section>
+        <article class="mainarticle">
+            <img src="https://cdn.pixabay.com/photo/2014/01/07/01/02/idaho-239691_960_720.jpg" alt="Idaho Farmland">
+            <h2>More about Preston, Idaho</h2>
+            <p>Preston, Idaho is one of the best in the West. It lays against the Idaho beautiful Cache Valley. It is surrounded by mountains on both sides.</p>
+            <p><a href="https://www.prestonidaho.net/" target="_blank">Read More. . .</a></p>
+            <h3>Best Time to Visit</h3>
+            <p>From June to about mid August is the best time of year to visit Preston. </p>
+            <p><a href="https://weatherspark.com/y/2756/Average-Weather-in-Preston-Idaho-United-States-Year-Round"
+                    target="_blank">Read More. . .</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footermenu">
+            <div>
+                <iframe class="maparea"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sza!4v1602155136066!5m2!1sen!2sza"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div>
+                <h3>Contact Information</h3>
+                <p>Email: info@idahows.com</p>
+                <div class="sociallinks">
+                    <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightdetails">
+            <p>&copy; <span id="currentYear4"></span> | Joseph Johnson | Texas | <a
+                    href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../index.html">Back to Main
+                    Portal</a></p>
+            <p class="highlighted">Current Date: <span id="currentdate"></span></p>
+        </div>
+    </footer>
+    <script src="js/currentYear.js"></script>
+    <script src="js/currentDate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/displayAlert.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
