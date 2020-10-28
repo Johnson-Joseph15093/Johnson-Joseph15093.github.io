@@ -8,10 +8,35 @@
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <img src='data/img/placeholder.png' data-src='data/img/SLUG.jpg' alt='NAME'>
     <title>Progressive Loading of Images | Joseph Johnson</title>
 </head>
 <body>
-
+    article img[data-src] {
+        filter: blur(0.2em);
+      }
+      
+      article img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+      }
+      if('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((items, observer) => {
+          items.forEach((item) => {
+            if(item.isIntersecting) {
+              loadImages(item.target);
+              observer.unobserve(item.target);
+            }
+          });
+        });
+        imagesToLoad.forEach((img) => {
+          observer.observe(img);
+        });
+      } else {
+        imagesToLoad.forEach((img) => {
+          loadImages(img);
+        });
+      } 
   <footer>
     <div class="copyrightdetails">
       <p>&copy; <span id="currentYear4"></span> | Joseph Johnson | Texas | <a
@@ -22,7 +47,7 @@
   </footer>   
   <script src="js/currentDate.js"></script>
   <script src="js/currentYear.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/app.js" defer></script>
 </body>
 
 </html>
