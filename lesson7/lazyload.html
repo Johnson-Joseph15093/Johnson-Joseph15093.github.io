@@ -11,23 +11,7 @@
     <title>Progressive Loading of Images | Joseph Johnson</title>
 </head>
 <body>
-if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if(item.isIntersecting) {
-          loadImages(item.target);
-          observer.unobserve(item.target);
-        }
-      });
-    });
-    imagesToLoad.forEach((img) => {
-      observer.observe(img);
-    });
-  } else {
-    imagesToLoad.forEach((img) => {
-      loadImages(img);
-    });
-  }
+
   <footer>
     <div class="copyrightdetails">
       <p>&copy; <span id="currentYear4"></span> | Joseph Johnson | Texas | <a
