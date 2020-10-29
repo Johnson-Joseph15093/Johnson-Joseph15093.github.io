@@ -3,32 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Joseph Johnson Assignment portal" />
-    <link rel="stylesheet" type="text/css" href="css/small.css">
-    <link rel="stylesheet" type="text/css" href="css/medium.css">
-    <link rel="stylesheet" type="text/css" href="css/large.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
-    <title>Progressive Loading of Images | Joseph Johnson</title>
+    <link rel="stylesheet" type="text/css" href="css/lazy.css">
+    <script src="js/lazyload.js" defer></script>
+    <title>Lazy Load</title>
 </head> 
 <body> 
-    <header>
-        <h1>Joseph Johnson</h1>
-    </header>
     <main>
-        <h2>WDD-230: Assignment Portal</h2>
-        <img src="data/img/placeholder.png" data-src="data/img/SLUG.jpg" alt="NAME">
-    </main>    
-  <footer>
-    <div class="copyrightdetails">
-      <p>&copy; <span id="currentYear4"></span> | Joseph Johnson | Texas | <a
-              href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../index.html">Back to Main
-              Portal</a></p>
-      <p class="highlighted">Current Date: <span id="currentdate"></span></p>
-  </div>
-  </footer>   
-  <script src="js/currentDate.js"></script>
-  <script src="js/currentYear.js"></script>
-  <script src="js/app.js" defer></script>
+        <h2>Progressive Loading of Images</h2>
+        <span><a href="../index.html">Portal</a></span>
+        <picture><img src="https://via.placeholder.com/300x400" data-src="images/1.jpg" alt="tech1"></picture>
+        <picture><img src="https://via.placeholder.com/300x400" data-src="images/2.jpg" alt="tech2"></picture>
+        <picture><img src="https://via.placeholder.com/300x400" data-src="images/3.jpg" alt="tech3"></picture>
+        <picture><img src="https://via.placeholder.com/300x400" data-src="images/4.jpg" alt="tech4"></picture>
+        <picture><img src="https://via.placeholder.com/300x400" data-src="images/5.jpg" alt="tech5"></picture>
+        <picture><img src="https://via.placeholder.com/300x400" data-src="images/6.jpg" alt="tech6"></picture>
+    </main>   
   </body>
 </html>
