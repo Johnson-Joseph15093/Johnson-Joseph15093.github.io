@@ -3,7 +3,7 @@
 body {
     font-size: 18px;
     line-height: 1.5;
-    font-family: 'pt sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header,
@@ -31,7 +31,7 @@ footer {
 
 h1,
 h2 {
-    font-family: 'Merriweather', Arial;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
 
@@ -46,7 +46,7 @@ h2 {
 }
 
 p {
-    font-family: 'Roboto Slab', Arial;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a,
