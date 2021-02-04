@@ -9,16 +9,20 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    main section:nth-child(2) {
-        display: block;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 500px 500px 500px;
+        grid-template-rows: 500px 500px 500px;
+        grid-gap: 5px;
+        background-color: #fff;
     }
 
-    main section:nth-child(3) {
-        grid-column: span 2;
-    }
-
-    main section:nth-child(4) {
-        grid-column: span 2;
+    .box {
+        background-color: #3297a8;
+        color: black;
+        border-radius: 100px;
+        padding: 12px;
+        font-size: 100%;
     }
 
     h1 {
