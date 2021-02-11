@@ -4,7 +4,10 @@
 	.footermenu,
 	.copyrightdetails,
 	.mainarticle,
-	.topsection,
+	.topsection {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+	}
 	.bottomsection {
 		margin: 0 auto;
 		max-width: 100%;
