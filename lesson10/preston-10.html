@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
 <head>
-  <title>Whether Gallery</title>
+  <title>Whether For Preston Idaho</title>
     
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,10 +13,16 @@
   <link rel="stylesheet" type="text/css" href="css/large.css" media="screen">
   <link rel="stylesheet" type="text/css" href="css/small.css" media="screen">
   <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen">
+
+  <script src="/lesson10/js/script.js" defer></script>
+  <script src="/lesson10/js/weatherapi.js"></script>
+  <script src="/lesson10/js/windchill.js"></script>
+ 
+
 </head>
 
-<body>
-  <!--<aside style="display: block;">_</aside>-->
+<body onload="doInputOutput(); Settoday()"></body>
+  
   <header>
     <div id="Fri" style="display:none">
       Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
@@ -43,18 +49,64 @@
   <main class="clearfix"><br>
       <h2>Welcome to Idaho</h2>
 
-     <div class="hero"></div>
-      <picture class="photoA">
-        <source media="(max-width: 100px)" srcset="image/hero_100.jpg">
-         <source media="(max-width: 400px)" srcset="image/hero_400.jpg">
-        <source media="(max-width: 700px)" srcset="image/hero_700.jpg">
-         <img src="image/tetonmountain.jpg" alt="Teton mountain">
-    </picture>
-  </div>
-         
-  <div class="cards">
+      <div class="box1">
+       
+        <h2>Welcome to Idaho</h2>
 
-  </div>
+        <div class="hero"></div>
+         <picture class="photoA">
+           <source media="(max-width: 100px)" srcset="image/hero_100.jpg">
+            <source media="(max-width: 400px)" srcset="image/hero_400.jpg">
+           <source media="(max-width: 700px)" srcset="image/hero_700.jpg">
+            <img src="image/tetonmountain.jpg" alt="Teton mountain">
+       </picture>
+        
+        <section class="stats">
+          <h3>Weather Summary</h3>
+          <p>Weather: <span id="weather"></span></p>
+          <p>Tempreture: <span id="temp"></span>F</p>
+          <p>Humidity: <span id="humidity"></span></p>
+          
+          <p>Wind Chill: <span id ="wind"></span>F</p>
+          <button type="button" onclick="doInputOutput()">Refresh</button>
+          <p id="caution">*Refresh the page</p>
+          
+          <p>Wind Speed: <span id="speed"></span>mph</p>
+         </section>
+         
+         </div>
+        <p>
+        </p>
+
+    </div>
+
+    <div class="box2">
+      <h3>5 Day Forecast</h3>
+      <table class="weather" border="1">
+        <tr>
+          <th><p><span id="dayofWeek1"></span>:<span id="forecast1"></span>&deg; F</p></th>
+          <th><p><span id="dayofWeek2"></span>:<span id="forecast2"></span>&deg; F</p></th>
+          <th><p><span id="dayofWeek3"></span>:<span id="forecast3"></span>&deg; F</p></th>
+          <th><p><span id="dayofWeek4"></span>:<span id="forecast4"></span>&deg; F</p></th>
+          <th><p><span id="dayofWeek5"></span>:<span id="forecast5"></span>&deg; F</p></th>
+         
+          </tr>
+       <tr>
+          <td><p><span id="image1"></span>&nbsp;<img src="" alt="" id="icon1"></p></td>
+          <td><p><span id="image2"></span>&nbsp;<img src="" alt="" id="icon2"></p></td>
+          <td><p><span id="image3"></span>&nbsp;<img src="" alt="" id="icon3"></p></td>
+          <td><p><span id="image4"></span>&nbsp;<img src="" alt="" id="icon4"></p></td>
+          <td><p><span id="image5"></span>&nbsp;<img src="" alt="" id="icon5"></p></td>
+        </tr>
+       
+      
+      </table>
+    </div>
+    <div class="box3">
+      <h3>Article</h3>
+      <img class="town2" src ="">
+      <p>
+  
   <div>
 
     Know your weather for different places in the beautiful state of Idaho. Feel free to download our app or get updates via email and phone.
@@ -76,9 +128,6 @@
       id="byui">BYU-I Online Learning</a>
     
   </footer>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-    webFont.load({google:{families: ["Montserrat"]}});
-  </script>-->
+ 
 </body>
  </html>  
